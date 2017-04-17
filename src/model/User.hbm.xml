@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model"><!--  对应的包 -->
+
+    <class name="User" table="user">
+        <id name="id" column="id">
+        <generator class="assigned"></generator>
+        </id>
+        <property name="pwd"></property>
+        <property name="name"></property>
+        <property name="sex"></property>
+        <property name="birthday"></property>
+        <property name="place"></property>
+        <property name="phone"></property>
+        <property name="department"></property>
+        <property name="email"></property>
+        <property name="root"></property>
+       
+      
+    </class>
+
+</hibernate-mapping>

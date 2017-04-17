@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+
+	<class name="Record" table="record">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="application_id"></property>
+		<property name="user_id"></property>
+		<property name="car_id"></property>
+		<property name="driver_id"></property>
+		<property name="beginday"></property>
+		<property name="endday"></property>
+		<property name="isreturn"></property>
+		<property name="returnday"></property>
+		<property name="cost"></property>
+		<property name="notes"></property>
+	</class>
+
+</hibernate-mapping>
